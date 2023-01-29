@@ -1,8 +1,9 @@
 function sumSalary(salaries) {
   let sum = 0;
   for (let key in salaries) {
-    if (!isNaN(salaries[key]) && salaries[key] !== Infinity && salaries[key] !== -Infinity) {
-        sum += salaries[key];
+    const salary = salaries[key];
+    if (!isNaN(salary) && salary !== Infinity && salary !== -Infinity) {
+        sum += salary;
       }
   } return sum;
     } 
